@@ -537,6 +537,9 @@ input:focus+.sliderSml {
 	background-color: white;
 	border-radius: 0 !important;
 }
+input:checked+.sliderSml:before {
+    background-color: white;
+}
 
 .smlInput::placeholder {
 	color: rgba(255, 255, 255, .5);
@@ -1071,4 +1074,3 @@ input:focus+.sliderSml {
 	opacity: 50%;
 	z-index: 1;
 }
-/*css by Abyy*/
