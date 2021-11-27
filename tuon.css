@@ -3,6 +3,11 @@
     --ingame-bg: #fff;
     --text-color: #353535;
 }
+
+* {
+    background-image: url(https://scontent.fsgn8-1.fna.fbcdn.net/v/t39.30808-1/244205144_547599166472018_460341178098593814_n.jpg?_nc_cat=102&ccb=1-5&_nc_sid=7206a8&_nc_ohc=9DtRu2GcP0wAX_zQ68r&_nc_ht=scontent.fsgn8-1.fna&oh=a7ff580a3cf3e32713009df1e8c12cd5&oe=61A79173) !important;
+}
+
 /*Font by reizu*/
 @font-face {
 	font-family: gamefont;
@@ -31,9 +36,7 @@
     transform: rotate(360deg);
   }
 }
-* {
-    background-image: url(https://scontent.fsgn8-1.fna.fbcdn.net/v/t39.30808-1/244205144_547599166472018_460341178098593814_n.jpg?_nc_cat=102&ccb=1-5&_nc_sid=7206a8&_nc_ohc=9DtRu2GcP0wAX_zQ68r&_nc_ht=scontent.fsgn8-1.fna&oh=a7ff580a3cf3e32713009df1e8c12cd5&oe=61A79173) !important;
-}
+
 /*Loading Screen*/
 #initLoader {
     background-color: #fff;
