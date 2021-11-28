@@ -3,7 +3,6 @@
     --ingame-bg: #fff;
     --text-color: #353535;
 }
-
 /*Font by reizu*/
 @font-face {
 	font-family: gamefont;
@@ -24,18 +23,23 @@
     }
 }
 
-@keyframes lds-dual-ring {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
+@keyframes load {
+  0% { 
+       width: 0; 
+    }
+  100% { 
+       width: 100%; 
+     }
+}
+
+/*Links*/
+a {
+    color: #fff !important;
 }
 
 /*Loading Screen*/
 #initLoader {
-    background-color: #fff;
+    background-color: #000;
 }
 #loadingBg {
     top: 40px;
@@ -48,9 +52,9 @@
 }
 
 #loadInfoRHolder {
-    color: #fff;
+    color: #fff !important;
     font-size: 0;
-    background-color: #000;
+    background-color: rgba(225,225,225,.2);
     padding: 4px 8px;
     box-shadow: 4px 4px var(--accent);
 }
@@ -61,7 +65,7 @@
 }
 
 #loadTipsHolder {
-    color: var(--text-color);
+    color: white;
     font-size: 0;
 }
 
@@ -69,30 +73,31 @@
     content: "css by Abyy";
     display: block;
     font-size: 24px;
-    color: var(--accent) !important;
+    color: white !important;
 }
 
 .lC-cube {
-    display: none;
+  background-color: rgba(255,255,255,0.1);
+  justify-content: flex-start;
+  align-items: center;
+  position: fixed;
+  padding: 0 5px;
+  display: flex;
+  height: 40px;
+  width: 500px;;
+}
+.lC-cube::after {
+  animation: load 2s cubic-bezier(0.3, 0.3, 0.3, 0.3);
+  background-color: #fff;
+  height: 30px;
+  content:"";
+  z-index: 999 !important;
+  width:100%;
+  box-shadow: 0 10px 40px -10px #fff
 }
 
-#lC-cont::after {
-    content: "";
-    display: block;
-    width: 64px;
-    height: 64px;
-    margin: 8px;
-    border-radius: 50%;
-    border: 6px solid var(--accent);
-    border-color: var(--accent) transparent var(--accent) transparent;
-    animation: lds-dual-ring 1.2s linear infinite;
-}
-
-#lC-cont::before {
-    content: url();
-	display: block;
-	position: absolute;
-    transform: translateX(-45%) translateY(-150%) scale(150%);
+.lC-r, .lC-bt, .lC-b, .lC-t, .lC-l, .lC-f, #lC-ico {
+    display: none !important;
 }
 /*SubLogo*/
 #subLogoButtons {
